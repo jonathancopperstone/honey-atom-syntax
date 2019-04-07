@@ -56,6 +56,7 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
+  font-style: italic;
   color: @base-aside-color;
 }
 
@@ -186,7 +187,12 @@ atom-text-editor {
     }
   }
 
+  &.syntax--type {
+    color: #fbfa71;
+  }
+
   &.syntax--storage.syntax--type {
+    font-style: italic;
     color: #77dff1;
   }
 }
@@ -217,6 +223,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--attribute-name {
+    font-style: italic;
     color: @orange;
 
     &.syntax--id {
